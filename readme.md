@@ -1,53 +1,6 @@
 # Contents
 
 **Case Study: Multi-Modal Anomaly Detection in Oil Rig Operations Using Time Series and Text Logs**  
-Objective:  
-Step:1 Simulate Data  
-1. Mud Pump  
-2. Centrifugal Pump  
-3. Blowout Preventer (BOP)  
-4. Shale Shaker  
-5. Diesel Generator  
-Step:2 Preprocess Data  
-1. Timestamp Parsing & Feature Engineering  
-2. Missing Value Handling  
-3. Preprocessing Pipeline  
-4. Batch Processing – All Equipment  
-Step:3 Anomaly Detection  
-1. Configuration & Setup  
-2. Load Processed Sensor Files  
-3. Isolation Forest (Tree-Based)  
-4. One-Class SVM (Kernel-Based)  
-5. LSTM Autoencoder (Deep Learning)  
-Step:4 Text embedding and correlation  
-1. Load Anomaly Outputs  
-2. Parse Unstructured Operator Logs  
-3. Generate Semantic Embeddings  
-4. Anomaly–Log Matching (Semantic Correlation)  
-5. Result Compilation  
-6. Save Correlation Output  
-Step:5 Insight generation  
-1. Load API Key  
-2. Prompt Construction Per Equipment  
-3. Language Model Interaction  
-4. Postprocessing and Storage  
-Step:6 Streamlit-Based Real-Time Monitoring Dashboard  
-1. App Setup & Styling  
-2. File Mapping & Directory Initialization  
-3. Sidebar Navigation  
-4. Equipment Logs View  
-5. Anomaly Detection View  
-6. Correlation View  
-7. Anomaly Summary View  
-**Critical Analysis of the Approach**  
-1. Potential Points of Failure  
-2. Key Assumptions  
-3. Improvements  
-**Future Work**
-
----
-
-# Case Study: Multi-Modal Anomaly Detection in Oil Rig Operations Using Time Series and Text Logs
 
 ## Objective:
 Design and demonstrate a prototype system that detects anomalies in oil rig operations by combining sensor time series data and operator text logs. The focus is on the approach, reasoning, and deployment-readiness, not just accuracy.
