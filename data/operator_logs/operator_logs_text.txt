@@ -1,0 +1,12 @@
+2024-05-05 11:46:00 | Equipment: Mud Pump | Shift: A | Operator: Leela D | operator flagged concern in Mud Pump | Sensors: pressure_psi: 87.69, flow_rate_lpm: 89.33, pump_temp_C: 58.34
+2024-05-14 10:56:00 | Equipment: Mud Pump | Shift: C | Operator: Anita R | alert received from monitoring system for Mud Pump | Sensors: pressure_psi: 118.42, flow_rate_lpm: 91.46, pump_temp_C: 56.62
+2024-03-19 09:35:00 | Equipment: Mud Pump | Shift: B | Operator: Kumar V | operator flagged concern in Mud Pump | Sensors: pressure_psi: 122.12, flow_rate_lpm: 55.48, pump_temp_C: 59.27
+2024-05-05 05:24:00 | Equipment: Centrifugal Pump | Shift: A | Operator: Leela D | investigating equipment condition on Centrifugal Pump | Sensors: vibration_mmps: 8.77, bearing_temp_C: 49.74, motor_current_A: 52.05
+2024-05-13 14:20:00 | Equipment: Centrifugal Pump | Shift: C | Operator: Kumar V | noticed unusual readings on Centrifugal Pump | Sensors: vibration_mmps: 2.57, bearing_temp_C: 51.26, motor_current_A: 60.30
+2024-03-19 18:33:00 | Equipment: Centrifugal Pump | Shift: C | Operator: Suresh M | alert received from monitoring system for Centrifugal Pump | Sensors: bearing_temp_C: 52.28, motor_current_A: 80.83
+2024-05-01 01:11:00 | Equipment: Blowout Preventer | Shift: B | Operator: Kumar V | manual inspection initiated for Blowout Preventer | Sensors: hydraulic_pressure_psi: 2458.91, accumulator_pressure_psi: 3012.82
+2024-05-04 23:02:00 | Equipment: Shale Shaker | Shift: A | Operator: Suresh M | scheduled maintenance triggered for Shale Shaker | Sensors: vibration_rpm: 2560.72, motor_load_pct: 95.93, throughput_lpm: 344.85
+2024-05-16 18:43:00 | Equipment: Shale Shaker | Shift: A | Operator: Kumar V | investigating equipment condition on Shale Shaker | Sensors: vibration_rpm: 1955.29, motor_load_pct: 73.80
+2024-01-12 04:21:00 | Equipment: Diesel Generator | Shift: B | Operator: Anita R | investigating equipment condition on Diesel Generator | Sensors: load_pct: 75.31, engine_temp_C: 82.20, fuel_level_pct: -176.52, oil_pressure_psi: 42.88
+2024-06-06 21:55:00 | Equipment: Diesel Generator | Shift: A | Operator: Kumar V | alert received from monitoring system for Diesel Generator | Sensors: load_pct: 91.85, engine_temp_C: 108.59, fuel_level_pct: -3320.93, oil_pressure_psi: 41.28
+2024-03-02 01:19:00 | Equipment: Diesel Generator | Shift: B | Operator: Suresh M | investigating equipment condition on Diesel Generator | Sensors: load_pct: 64.90, engine_temp_C: 83.21, fuel_level_pct: -1228.79, oil_pressure_psi: 19.31

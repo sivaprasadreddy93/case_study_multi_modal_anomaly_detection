@@ -1,0 +1,108 @@
+{
+  "global": {
+    "start_date": "2024-01-01",
+    "end_date": "2024-06-30 23:59",
+    "frequency": "1T",
+    "missing_fraction": 0.005,
+    "seed": 42,
+    "output_dir": "data/synthetic_oilrig_data",
+    "operator_logs_dir": "data/operator_logs",
+    "log_csv": "synthetic_operator_logs.csv",
+    "log_txt": "operator_logs_text.txt"
+  },
+
+  "equipment": {
+    "Mud Pump": {
+      "sensors": {
+        "pressure_psi":  { "mean": 120, "std": 4,  "units": "psi"   },
+        "flow_rate_lpm":{ "mean":  90, "std": 3,  "units": "L/min" },
+        "pump_temp_C":  { "mean":  58, "std": 2,  "units": "°C"    }
+      },
+      "anomalies": [
+        { "type": "spike", "channel": "pressure_psi",  "count": 3,
+          "magnitude": -35, "width": 5,
+          "message": "Sudden pressure drop detected on Mud Pump." },
+
+        { "type": "drift", "channel": "pump_temp_C",
+          "length": 1500, "slope": 0.02,
+          "message": "Gradual temperature increase noted on Mud Pump seals." },
+
+        { "type": "spike", "channel": "flow_rate_lpm", "count": 1,
+          "magnitude": -30, "width": 10,
+          "message": "Flow rate dropped sharply – possible obstruction in Mud Pump." }
+      ]
+    },
+
+    "Centrifugal Pump": {
+      "sensors": {
+        "vibration_mmps": { "mean": 3.0, "std": 0.4, "units": "mm/s" },
+        "bearing_temp_C": { "mean": 52,  "std": 2,   "units": "°C"  },
+        "motor_current_A":{ "mean": 60,  "std": 4,   "units": "A"   }
+      },
+      "anomalies": [
+        { "type": "spike", "channel": "vibration_mmps", "count": 2,
+          "magnitude": 6, "width": 5,
+          "message": "Vibration spike in Centrifugal Pump." },
+
+        { "type": "drift", "channel": "bearing_temp_C",
+          "length": 2500, "slope": 0.015,
+          "message": "Bearing temperature rising on Centrifugal Pump." },
+
+        { "type": "spike", "channel": "motor_current_A", "count": 1,
+          "magnitude": 20, "width": 10,
+          "message": "Motor current surge in Centrifugal Pump." }
+      ]
+    },
+
+    "Blowout Preventer": {
+      "sensors": {
+        "hydraulic_pressure_psi":   { "mean": 2500, "std": 60, "units": "psi" },
+        "accumulator_pressure_psi": { "mean": 3000, "std": 30, "units": "psi" }
+      },
+      "anomalies": [
+        { "type": "drift", "channel": "hydraulic_pressure_psi",
+          "length": 1800, "slope": -0.4,
+          "message": "Hydraulic pressure drop in BOP – possible leak." }
+      ]
+    },
+
+    "Shale Shaker": {
+      "sensors": {
+        "vibration_rpm":  { "mean": 2000, "std": 40, "units": "RPM" },
+        "motor_load_pct": { "mean": 68,   "std": 4,  "units": "%"},
+        "throughput_lpm": { "mean": 350,  "std": 10, "units": "L/min"}
+      },
+      "anomalies": [
+        { "type": "spike", "channel": "vibration_rpm", "count": 2,
+          "magnitude": 650, "width": 5,
+          "message": "High vibration on Shale Shaker – imbalance suspected." },
+
+        { "type": "spike", "channel": "throughput_lpm", "count": 1,
+          "magnitude": -140, "width": 25,
+          "message": "Throughput drop on Shale Shaker – possible clog." }
+      ]
+    },
+
+    "Diesel Generator": {
+      "sensors": {
+        "load_pct":         { "mean": 70,  "std": 5,   "units": "%"  },
+        "engine_temp_C":    { "mean": 85,  "std": 3,   "units": "°C" },
+        "fuel_level_pct":   { "mean": 90,  "std": 0.02,"units": "%"  },
+        "oil_pressure_psi": { "mean": 42,  "std": 1.5, "units": "psi"}
+      },
+      "anomalies": [
+        { "type": "spike", "channel": "fuel_level_pct", "count": 1,
+          "magnitude": -25, "width": 60,
+          "message": "Fuel level drop in Diesel Generator – check for leak." },
+
+        { "type": "spike", "channel": "load_pct", "count": 1,
+          "magnitude": 25, "width": 45,
+          "message": "Diesel Generator overload – load high." },
+
+        { "type": "spike", "channel": "engine_temp_C", "count": 1,
+          "magnitude": 18, "width": 45,
+          "message": "Engine temperature spike in Diesel Generator." }
+      ]
+    }
+  }
+}

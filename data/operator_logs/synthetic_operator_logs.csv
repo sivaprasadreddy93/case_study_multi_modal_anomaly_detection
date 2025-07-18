@@ -1,0 +1,13 @@
+log_time,equipment_id,operator_name,shift,text,pressure_psi,flow_rate_lpm,pump_temp_C,vibration_mmps,bearing_temp_C,motor_current_A,hydraulic_pressure_psi,accumulator_pressure_psi,vibration_rpm,motor_load_pct,throughput_lpm,load_pct,engine_temp_C,fuel_level_pct,oil_pressure_psi
+2024-05-05 11:46:00,Mud Pump,Leela D,A,operator flagged concern in Mud Pump,87.68774654447492,89.32884608435491,58.33628226716536,,,,,,,,,,,,
+2024-05-14 10:56:00,Mud Pump,Anita R,C,alert received from monitoring system for Mud Pump,118.42040779321775,91.45768358055119,56.621924041982226,,,,,,,,,,,,
+2024-03-19 09:35:00,Mud Pump,Kumar V,B,operator flagged concern in Mud Pump,122.12397909973424,55.479525745953964,59.26938225987527,,,,,,,,,,,,
+2024-05-05 05:24:00,Centrifugal Pump,Leela D,A,investigating equipment condition on Centrifugal Pump,,,,8.767598436992543,49.735388850241605,52.05163715367483,,,,,,,,,
+2024-05-13 14:20:00,Centrifugal Pump,Kumar V,C,noticed unusual readings on Centrifugal Pump,,,,2.5653192179777045,51.25847457891501,60.29703590340683,,,,,,,,,
+2024-03-19 18:33:00,Centrifugal Pump,Suresh M,C,alert received from monitoring system for Centrifugal Pump,,,,,52.28332854975421,80.82671969491858,,,,,,,,,
+2024-05-01 01:11:00,Blowout Preventer,Kumar V,B,manual inspection initiated for Blowout Preventer,,,,,,,2458.9117272636513,3012.81844875451,,,,,,,
+2024-05-04 23:02:00,Shale Shaker,Suresh M,A,scheduled maintenance triggered for Shale Shaker,,,,,,,,,2560.722915821828,95.92844257876877,344.8540074964215,,,,
+2024-05-16 18:43:00,Shale Shaker,Kumar V,A,investigating equipment condition on Shale Shaker,,,,,,,,,1955.2880881046908,73.8025235576506,,,,,
+2024-01-12 04:21:00,Diesel Generator,Anita R,B,investigating equipment condition on Diesel Generator,,,,,,,,,,,,75.31334569799849,82.20493208991287,-176.51897288281043,42.87785755198092
+2024-06-06 21:55:00,Diesel Generator,Kumar V,A,alert received from monitoring system for Diesel Generator,,,,,,,,,,,,91.84652476949331,108.58656756763563,-3320.9289728828103,41.27920542497135
+2024-03-02 01:19:00,Diesel Generator,Suresh M,B,investigating equipment condition on Diesel Generator,,,,,,,,,,,,64.90159285302614,83.21130130619436,-1228.7889728828104,19.310275267565522
