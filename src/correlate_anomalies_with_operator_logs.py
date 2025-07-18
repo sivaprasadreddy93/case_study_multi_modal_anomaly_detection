@@ -131,6 +131,6 @@ if df_correlations:
     df_final = pd.concat(df_correlations, ignore_index=True)
     Path(output_file).parent.mkdir(parents=True, exist_ok=True)
     df_final.to_csv(output_file, index=False)
-    print(f"✅ Correlation file written to: {output_file}")
+    print(f" Correlation file written to: {output_file}")
 else:
-    print("⚠️ No correlations found.")
+    print("No correlations found.")

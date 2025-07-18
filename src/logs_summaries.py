@@ -47,7 +47,7 @@ def get_summary(prompt, model="gpt-3.5-turbo"):
         )
         return response.choices[0].message.content.strip()
     except Exception as e:
-        print(f"⚠️ API Error: {e}")
+        print(f"API Error: {e}")
         return "Summary generation failed."
 
 def main():
@@ -73,7 +73,7 @@ def main():
     # Save to CSV
     summary_df = pd.DataFrame(summary_rows)
     summary_df.to_csv(output_csv, index=False)
-    print(f"✅ Equipment-wise summaries saved to: {output_csv}")
+    print(f" Equipment-wise summaries saved to: {output_csv}")
 
 if __name__ == "__main__":
     main()
